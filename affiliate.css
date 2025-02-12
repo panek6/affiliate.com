@@ -1,0 +1,824 @@
+
+
+/* Increase the boldness of the text */
+a {
+    font-weight: bold;
+    text-decoration: none; /* Remove default underline */
+    position: relative;
+  }
+  
+  /* Add animated underline on hover */
+  a::after {
+    content: '';
+    position: absolute;
+    bottom: -2px; /* Adjust to move the line closer or farther from text */
+    left: 0;
+    width: 0;
+    height: 3px; /* Thickness of the underline */
+    background-color: #d6dee6; /* Color of the underline */
+    transition: width 0.3s ease; /* Smooth transition for underline */
+  }
+  
+  /* On hover, the underline will appear */
+  a:hover::after {
+    width: 100%; /* Make the underline full width */
+  }
+  
+  /* Active state - keep the underline visible */
+  a:active::after {
+    width: 100%; /* Ensure underline stays active */
+  }
+  
+
+  
+    
+  
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: linear-gradient(45deg, rgb(199, 135, 199), rgb(182, 182, 192));
+    color: #ffffff;
+
+    
+
+   
+}
+
+header {
+    background: linear-gradient(45deg, rgb(78, 12, 78), rgb(182, 182, 192));
+    color: white;
+    padding: 1em;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    width: 100%;
+    
+
+    
+    backdrop-filter: blur(50px); /* Blurs the background */
+
+}
+
+
+
+
+
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1em;
+    background-color: #e68900;
+    backdrop-filter: blur(50px); /* Blurs the background */
+    
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    margin: 0 1em;
+}
+
+nav ul li a, nav ul li button {
+    color: white;
+    text-decoration: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+#searchButton{
+    height: 50px;
+    margin-top: 8px;
+    border-radius: 5px;
+}
+
+.icon-button {
+    position: relative;
+}
+
+.icon-button .icon-text {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #ffd700;
+    color: #000000;
+    padding: 0.5em;
+    border-radius: 5px;
+    white-space: nowrap;
+}
+
+.icon-button:hover .icon-text {
+    display: block;
+}
+
+#cancelSearchButton{
+    font-size: 22.5px; /* Adjust the value as needed */
+    margin-bottom: -10px;
+
+}
+
+.cart-count {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: #ffd700;
+    color: #000000;
+    border-radius: 50%;
+    padding: 0.25em 0.5em;
+    font-size: 0.75em;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1em;
+    position: relative;
+
+    background-color: transparent;
+    border: none;
+}
+
+.search-bar input {
+    padding: 0.5em;
+    margin-right: 0.5em;
+    border: none;
+    color: #ffffff;
+    width: 500px;
+    outline: none;
+    
+    background: rgba(255, 255, 255, 0.164); /* Semi-transparent background */
+    backdrop-filter: blur(10px); /* Blurs the background */
+    border-radius: 5px;
+
+    height: 40px;
+    margin-top: 10px;
+
+}
+
+.search-bar button {
+    padding: 0.5em 1em;
+    background-color: #ffd700;
+    color: #000000;
+    border: none;
+    cursor: pointer;
+    margin-right: 0.5em;
+
+    
+
+   
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+}
+
+#cancelSearchButton {
+    padding: 0.5em 1em;
+    background-color: #ffd700;
+    color: #000000;
+    border: none;
+    cursor: pointer;
+   
+    display: none;
+    border-radius: 5px;
+
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+   
+}
+
+.search-results {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    
+    overflow-x: hidden;
+    
+    max-height: 200px;
+    overflow-y: auto;
+    z-index: 1000;
+    color: #000000;
+
+    margin-top: 10px;
+    background-color: #8f6c8a;
+
+    /*background: rgba(255, 255, 255, 0.2); /* Semi-transparent background */
+    backdrop-filter: blur(70px); /* Blurs the background */
+    border-radius: 10px;
+
+
+
+}
+
+#helpButton i {
+    font-size: 24px; /* Adjust the value as needed */
+  }
+  
+
+
+
+
+
+
+
+
+
+
+input::placeholder {
+    color: whitesmoke;       /* Change color */
+    font-size: 16px;  /* Change font size */
+    font-weight: bold; /* Make it bold */
+  }
+  
+
+.search-results::-webkit-scrollbar {
+    display: none;
+
+    
+    overflow-y: auto; /* Allows scrolling but hides the scrollbar */
+    -ms-overflow-style: none;  /* For Internet Explorer */
+    scrollbar-width: none;  /* For Firefox */
+  
+  }
+  
+
+.search-results .result-item {
+    padding: 0.5em;
+    border-bottom: 0.5px solid #813a78;
+    cursor: pointer;
+}
+
+.search-results .result-item:hover {
+    background: #f1f1f1;
+}
+
+main {
+    padding: 2em;
+    text-align: center;
+}
+
+section {
+    padding: 2em;
+}
+
+.category {
+    margin-bottom: 2em;
+    font-size: 12px;
+    margin-top: -15px;
+}
+
+
+
+
+/*changer*/
+/* Rating and Add to Cart Section */
+.rating-and-cart {
+    
+    
+
+   
+    display: flex; /* Flex layout to align items horizontally */
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    margin-top: 0.5em;
+    gap: 20px; /* Set a max gap of 40px between the rating and the button */
+    width: 100%; /* Ensures the div takes full width */
+    text-align: center; /* Ensures text content is centered */
+}
+
+
+/* Rating - Golden Stars */
+/* Rating and Add to Cart Section */
+.rating-and-cart {
+    display: flex; /* Flex layout to align items horizontally */
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    margin-top: 0.5em;
+    gap: 40px; /* Set a max gap of 40px between the rating and the button */
+    width: 100%; /* Ensures the div takes full width */
+    text-align: center; /* Ensures text content is centered */
+}
+
+/* Add to Cart Button with Cart Icon and Plus Icon */
+.product .addToCart {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: gold; /* Golden background for the button */
+    border: 2px solid gold; /* Green border for the button */
+    color: black; /* Black color for the cart icon */
+    width: 40px; /* Size of the button */
+    height: 40px; /* Size of the button */
+    border-radius: 50%; /* Circular button */
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+/* Cart Icon */
+.product .addToCart .cart-icon {
+    font-size: 20px; /* Larger cart icon size */
+    color: black; /* Black color for the cart icon */
+}
+
+/* Plus Icon */
+.product .addToCart .plus-icon {
+    position: absolute;
+    top: -2px;
+    right: -2px;
+    font-size: 1.0em; /* Smaller plus icon size */
+    color: gold; /* Black color for the plus sign */
+    background-color: #000000;
+    border-radius: 50%;
+}
+
+/* Add to Cart Hover */
+.product .addToCart:hover {
+    background-color: gold; /* Green background on hover */
+    color: black;
+    transform: scale(1.1);
+}
+
+/* Add to Cart Hover Effect for Plus Icon */
+.product .addToCart:hover .cart-icon {
+    color: rgb(15, 15, 15); /* Change cart icon color to white on hover */
+}
+
+.product .addToCart:hover .plus-icon {
+    color: white; /* Change plus icon color to white on hover */
+}
+
+/* Rating - Golden Stars */
+.rating {
+    font-size: 1.5em;
+    color: gold;
+    margin: 0.3em 0;
+}
+
+/* Buy Now Link */
+.product a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    background-color: #ff9800;
+    padding: 8px 12px;
+    display: inline-block;
+    border-radius: 8px;
+    transition: background 0.3s ease, transform 0.2s ease;
+
+}
+
+/* Buy Now Hover */
+.product a:hover {
+    background-color: #e68900;
+    transform: scale(1.1);
+}
+
+/* Product Container with Grid Layout */
+.product-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Auto-adjusting grid */
+    gap: 20px; /* Space between products */
+    max-width: 100%;
+    padding: 1em;
+    justify-content: center;
+}
+
+/* Product Card */
+.product {
+    width: 100%;
+    max-width: 230px; /* Keeps cards uniform */
+    max-height: 350px;
+    margin: auto; /* Centers items */
+    padding: 1em;
+    border-radius: 5px;
+    background: linear-gradient(45deg, rgb(199, 135, 199), rgb(182, 182, 192));
+    color: #000000;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, background 0.5s ease-in-out;
+    
+    box-sizing: border-box;
+    margin-bottom: 11px;
+}
+
+/* Hover Effect */
+.product:hover {
+    background: linear-gradient(45deg, rgb(177, 97, 177), rgb(182, 182, 192));
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+   
+}
+
+/* Product Image */
+.product img {
+    width: 100%;
+    height: 180px; /* Ensures uniform height */
+    object-fit: cover;
+    border-radius: 5px;
+    transition: transform 0.3s ease-in-out;
+}
+
+
+
+/* Buy Now Link */
+.product a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    background-color: #ff9800;
+    padding: 8px 12px;
+    display: inline-block;
+    border-radius: 8px;
+    transition: background 0.3s ease, transform 0.2s ease;
+    margin-top: 1px;
+   
+}
+
+/* Buy Now Hover */
+.product a:hover {
+    background-color: #e68900;
+    transform: scale(1.1);
+}
+
+/* Add to Cart Button */
+.product .addToCart {
+    display: block;
+    margin-top: 0.5em;
+    background-color: gold;
+    color: black;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+/* Add to Cart Hover */
+.product .addToCart:hover {
+    background-color:gold;
+    transform: scale(1);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+    .product-container {
+        grid-template-columns: repeat(3, 1fr); /* 3 items per row on medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .product-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 items per row on small screens */
+    }
+    .pra{
+        background-color: gold;
+        min-height: auto;
+        max-width: auto;
+        margin-right: -450px;
+    
+    }
+}
+
+@media (max-width: 480px) {
+    .product-container {
+        grid-template-columns: repeat(1, 1fr); /* 1 item per row on extra small screens */
+    }
+    
+    
+}
+
+/*changer*/
+
+.product:hover {
+   
+   
+    
+    background: linear-gradient(45deg, rgb(177, 97, 177), rgb(182, 182, 192));
+    color: #000000;
+    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+
+.product img {
+   
+    
+    border-radius: 5px;
+}
+
+.product a{
+    text-decoration: none;
+    color: #0a0101;
+    font-weight: 1000;
+    padding: 5px;
+}
+
+.product a:hover{
+    text-decoration: underline solid white 3px;
+    transition: 3s;
+
+    color: #0a0101;
+    font-weight: 1000;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form label {
+    margin: 0.5em 0 0.2em 0;
+}
+
+form input, form textarea {
+    padding: 0.5em;
+    width: 80%;
+    margin-bottom: 1em;
+    border: 1px solid #ffd700;
+   
+    color: #ffffff;
+
+
+    padding: 0.5em;
+    margin-right: 0.5em;
+    border: none;
+    color: white;
+    max-width: 800px;
+    outline: none;
+    
+    background: rgba(255, 255, 255, 0.267); /* Semi-transparent background */
+    backdrop-filter: blur(10px); /* Blurs the background */
+    border-radius: 10px;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+
+    
+    
+}
+
+form input, form textarea:hover {
+    background: rgba(238, 236, 236, 0.39); 
+    box-shadow: 0px 0px 25px rgba(255, 140, 0, 0.9);
+}
+
+/* Submit Button Styling */
+#submit {
+    background: linear-gradient(45deg, #ffd700, #ffb700);
+    color: #000000;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    box-shadow: 3px 3px 10px rgba(255, 215, 0, 0.7);
+    transition: all 0.3s ease-in-out;
+
+    margin-bottom: 30px;
+}
+
+
+
+/* Hover Effect: Both Button & Form */
+#submit:hover {
+    background: linear-gradient(45deg, #ffb700, #ff8c00);
+    box-shadow: 0px 0px 15px rgba(255, 140, 0, 0.9);
+    transform: scale(1.05);
+}
+
+
+/* Change the form's shadow when hovering over the submit button */
+#submit:hover + #contactForm,
+#contactForm:hover {
+    box-shadow: 0px 0px 25px rgba(255, 140, 0, 0.9);
+}
+
+footer {
+    background-color: #000000;
+    color: #ffd700;
+    text-align: center;
+    padding: 1em 0;
+    margin-top: -3px;
+    
+   
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+   
+
+    
+    background: rgba(255, 255, 255, 0.2); /* Semi-transparent background */
+    backdrop-filter: blur(10px); /* Blurs the background */
+    border-radius: 10px;
+
+}
+
+.modal-content {
+    background: linear-gradient(45deg, rgb(199, 135, 199), rgb(182, 182, 192));
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 800px;
+    color: #000000;
+    border-radius: 20px;
+
+}
+
+
+.modal::-webkit-scrollbar {
+    display: none;
+
+    
+    overflow-y: auto; /* Allows scrolling but hides the scrollbar */
+    -ms-overflow-style: none;  /* For Internet Explorer */
+    scrollbar-width: none;  /* For Firefox */
+  
+  }
+  
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    margin: 1em 0;
+}
+
+.cart-item img {
+    width: 50px;
+    height: auto;
+    margin-right: 1em;
+}
+
+.cart-item button {
+    margin: 0 0.5em;
+    background-color: #ffd700;
+    color: #000000;
+    border: none;
+    cursor: pointer;
+}
+
+.cart-total {
+    text-align: right;
+    margin-top: 1em;
+}
+
+#buyNowButton {
+    display: block;
+    margin: 1em auto;
+    padding: 0.5em 2em;
+    background-color: #ffd700;
+    color: #000000;
+    border: none;
+    cursor: pointer;
+}
+
+.illustration {
+    margin-bottom: 2em;
+}
+
+.illustration img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin-bottom: 1em;
+}
+
+.faq-item {
+    margin-bottom: 1em;
+}
+
+.cart-item-image {
+    width: 50px;
+    height: auto;
+    margin-right: 1em;
+}
+
+
+/*content section */
+
+#contact{
+    background-color: #000000;
+    margin: -30.5px;
+    
+    border-radius: 20px 20px 0 0;
+
+}
+
+
+#contactForm{
+   /* background: linear-gradient(45deg, rgb(199, 135, 199), rgb(182, 182, 192));*/
+    
+    background-color: #000000;
+    border-radius: 20px;
+    
+    
+}
+
+
+
+
+
+
+
+/*content section */
+
+.socials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.socials a{
+    color: purple;
+}
+
+.socials a:hover{
+    color: goldenrod;
+}
+
+
+.sign-up {
+    margin-bottom: 10px;
+}
+
+.mediaers ul {
+    list-style: none;
+    display: flex;
+    gap: 50px;  /* Ensures at least 50px spacing */
+    padding: 0;
+    margin: 0;
+}
+
+.mediaers ul li {
+    display: inline-block;
+}
+
+.mediaers a {
+    font-size: 32px;  /* Increased icon size */
+    color: purple;
+    transition: color 0.3s ease, transform 0.2s ease;
+    cursor: pointer;
+}
+
+.mediaers a:hover {
+    color: goldenrod;
+    transform: scale(1.1);
+}
+
+/* Responsive adjustment for smaller screens */
+@media (max-width: 768px) {
+    .mediaers ul {
+        gap: 30px;  /* Reduce spacing on smaller screens */
+    }
+
+    .mediaers a {
+        font-size: 28px;  /* Slightly smaller icons on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .mediaers ul {
+        gap: 20px;  /* Reduce spacing even more for very small screens */
+    }
+
+    .mediaers a {
+        font-size: 24px;  /* Smaller icons for small screens */
+    }
+}

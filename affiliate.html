@@ -1,0 +1,1017 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Affiliate Marketing</title>
+    <link rel="stylesheet" href="affiliate.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        
+        <h1>Welcome to Our Affiliate Marketing Website</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+                <li>
+                    <button id="cartButton" class="icon-button">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="icon-text">Cart</span>
+                        <span id="cartCount" class="cart-count">0</span>
+                    </button>
+                </li>
+                <li>
+                    <button id="helpButton" class="icon-button">
+                        <i class="fas fa-question-circle"></i>
+                        <span class="icon-text">Help</span>
+                    </button>
+                </li>
+            </ul>
+        </nav>
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Search...">
+            <button id="searchButton"><i class="fas fa-search"></i></button>
+            <button id="cancelSearchButton" class="hidden">X</button>
+            <div id="searchResults" class="search-results"></div>
+        </div>
+    </header>
+    
+    <main>
+        <section id="home">
+            <h2>About Us</h2>
+            <p>We provide the best affiliate marketing products and offers. Join us to earn great commissions!</p>
+        </section>
+        
+        <section id="products">
+            <h2>Our Products</h2>
+            
+            <div class="category" data-category="Handbags">
+                <h3>Handbags</h3>
+    <div class="product-container">
+        <!-- Product 1 -->
+        <div class="product" data-product="Product 1">
+            <img src="Christian Dior Vintage Saddle Blue Cloth Handbag.jpeg" alt="Vintage Saddle">
+            <h3>Vintage Saddle</h3>
+            <p>Christian Dior Vintage Saddle Blue Cloth Handbag.</p>
+            <p><strong>Price:</strong> $100</p>
+    
+            <!-- Rating and Add to Cart Section -->
+            <div class="rating-and-cart">
+                <div class="rating">★★★★★</div>
+               <button class="addToCart" data-product="Vintage Saddle" data-price="100">
+                <i class="fas fa-shopping-cart cart-icon"></i>
+                <i class="fas fa-plus plus-icon"></i>
+            </button>
+            </div>
+    
+            <a href="https://jumia.com" target="_blank">Buy Now</a>
+        </div>
+    
+        <!-- Product 2 -->
+        <div class="product" data-product="Product 2">
+            <img src="Franco Shops - Louis Vuittons  - 14853.jpeg" alt="Luxury Handbag">
+            <h3>Luxury Handbag</h3>
+            <p>Exclusive leather handbag for a modern look.</p>
+            <p><strong>Price:</strong> $150</p>
+    
+            <!-- Rating and Add to Cart Section -->
+            <div class="rating-and-cart">
+                <div class="rating">★★★★☆</div>
+               <button class="addToCart" data-product="Vintage Saddle" data-price="100">
+                <i class="fas fa-shopping-cart cart-icon"></i>
+                <i class="fas fa-plus plus-icon"></i>
+            </button>
+            </div>
+    
+            <a href="https://jumia.com" target="_blank">Buy Now</a>
+        </div>
+        <div class="product" data-product="Product 1">
+            <img src="Christian Dior Vintage Saddle Blue Cloth Handbag.jpeg" alt="Vintage Saddle">
+            <h3>Vintage Saddle</h3>
+            <p>Christian Dior Vintage Saddle Blue Cloth Handbag.</p>
+            <p><strong>Price:</strong> $100</p>
+    
+            <!-- Rating and Add to Cart Section -->
+            <div class="rating-and-cart">
+                <div class="rating">★★★★★</div>
+               <button class="addToCart" data-product="Vintage Saddle" data-price="100">
+                <i class="fas fa-shopping-cart cart-icon"></i>
+                <i class="fas fa-plus plus-icon"></i>
+            </button>
+            </div>
+    
+            <a href="https://jumia.com" target="_blank">Buy Now</a>
+        </div>
+        <div class="product" data-product="Product 1">
+            <img src="Christian Dior Vintage Saddle Blue Cloth Handbag.jpeg" alt="Vintage Saddle">
+            <h3>Vintage Saddle</h3>
+            <p>Christian Dior Vintage Saddle Blue Cloth Handbag.</p>
+            <p><strong>Price:</strong> $100</p>
+    
+            <!-- Rating and Add to Cart Section -->
+            <div class="rating-and-cart">
+                <div class="rating">★★★★★</div>
+               <button class="addToCart" data-product="Vintage Saddle" data-price="100">
+                <i class="fas fa-shopping-cart cart-icon"></i>
+                <i class="fas fa-plus plus-icon"></i>
+            </button>
+            </div>
+    
+            <a href="https://jumia.com" target="_blank">Buy Now</a>
+        </div>
+    
+        <!-- Product 3 -->
+        <div class="product" data-product="Product 3">
+            <img src="Mini Saddle Bag With Strap Blue Dior Oblique Jacquard.jpeg" alt="Designer Handbag">
+            <h3>Mini Saddle Bag</h3>
+            <p>Elegant blue saddle bag for stylish women.</p>
+            <p><strong>Price:</strong> $200</p>
+    
+            <!-- Rating and Add to Cart Section -->
+            <div class="rating-and-cart">
+                <div class="rating">★★★★☆</div>
+               <button class="addToCart" data-product="Vintage Saddle" data-price="100">
+                <i class="fas fa-shopping-cart cart-icon"></i>
+                <i class="fas fa-plus plus-icon"></i>
+            </button>
+            </div>
+    
+            <a href="https://jumia.com" target="_blank">Buy Now</a>
+        </div>
+        <div class="product" data-product="Product 1">
+            <img src="Christian Dior Vintage Saddle Blue Cloth Handbag.jpeg" alt="Vintage Saddle">
+            <h3>Vintage Saddle</h3>
+            <p>Christian Dior Vintage Saddle Blue Cloth Handbag.</p>
+            <p><strong>Price:</strong> $100</p>
+    
+            <!-- Rating and Add to Cart Section -->
+            <div class="rating-and-cart">
+                <div class="rating">★★★★★</div>
+               <button class="addToCart" data-product="Vintage Saddle" data-price="100">
+                <i class="fas fa-shopping-cart cart-icon"></i>
+                <i class="fas fa-plus plus-icon"></i>
+            </button>
+            </div>
+    
+            <a href="https://jumia.com" target="_blank">Buy Now</a>
+        </div>
+    
+        <!-- Product 4 -->
+        <div class="product" data-product="Product 4">
+            <img src="Saddle Bag With Strap Black Grained Leather.jpeg" alt="Elegant Black Handbag">
+            <h3>Elegant Black Handbag</h3>
+            <p>Classic black handbag with a stylish design.</p>
+            <p><strong>Price:</strong> $220</p>
+    
+            <!-- Rating and Add to Cart Section -->
+            <div class="rating-and-cart">
+                <div class="rating">★★★★☆</div>
+               <button class="addToCart" data-product="Vintage Saddle" data-price="100">
+                <i class="fas fa-shopping-cart cart-icon"></i>
+                <i class="fas fa-plus plus-icon"></i>
+            </button>
+            </div>
+    
+            <a href="https://jumia.com" target="_blank">Buy Now</a>
+        </div>
+        <div class="product" data-product="Product 1">
+            <img src="Christian Dior Vintage Saddle Blue Cloth Handbag.jpeg" alt="Vintage Saddle">
+            <h3>Vintage Saddle</h3>
+            <p>Christian Dior Vintage Saddle Blue Cloth Handbag.</p>
+            <p><strong>Price:</strong> $100</p>
+    
+            <!-- Rating and Add to Cart Section -->
+            <div class="rating-and-cart">
+                <div class="rating">★★★★★</div>
+               <button class="addToCart" data-product="Vintage Saddle" data-price="100">
+                <i class="fas fa-shopping-cart cart-icon"></i>
+                <i class="fas fa-plus plus-icon"></i>
+            </button>
+            </div>
+    
+            <a href="https://jumia.com" target="_blank">Buy Now</a>
+        </div>
+    
+        <!-- Product 5 -->
+        <div class="product" data-product="Product 5">
+            <img src="Sekonda Charlotte Ladies Classic Watch (40477) - Round _ Alloy Bracelet _ Pink Dial _ Classic Col___.jpeg" alt="Classic Watch">
+            <h3>Classic Watch</h3>
+            <p>Sekonda Charlotte Ladies Classic Watch with pink dial.</p>
+            <p><strong>Price:</strong> $85</p>
+    
+            <!-- Rating and Add to Cart Section -->
+            <div class="rating-and-cart">
+                <div class="rating">★★★★☆</div>
+               <button class="addToCart" data-product="Vintage Saddle" data-price="100">
+                <i class="fas fa-shopping-cart cart-icon"></i>
+                <i class="fas fa-plus plus-icon"></i>
+            </button>
+            </div>
+    
+            <a href="https://jumia.com" target="_blank">Buy Now</a>
+        </div>
+        <div class="product" data-product="Product 1">
+            <img src="Christian Dior Vintage Saddle Blue Cloth Handbag.jpeg" alt="Vintage Saddle">
+            <h3>Vintage Saddle</h3>
+            <p>Christian Dior Vintage Saddle Blue Cloth Handbag.</p>
+            <p><strong>Price:</strong> $100</p>
+    
+            <!-- Rating and Add to Cart Section -->
+            <div class="rating-and-cart">
+                <div class="rating">★★★★★</div>
+               <button class="addToCart" data-product="Vintage Saddle" data-price="100">
+                <i class="fas fa-shopping-cart cart-icon"></i>
+                <i class="fas fa-plus plus-icon"></i>
+            </button>
+            </div>
+    
+            <a href="https://jumia.com" target="_blank">Buy Now</a>
+        </div>
+        <div class="product" data-product="Product 1">
+            <img src="Christian Dior Vintage Saddle Blue Cloth Handbag.jpeg" alt="Vintage Saddle">
+            <h3>Vintage Saddle</h3>
+            <p>Christian Dior Vintage Saddle Blue Cloth Handbag.</p>
+            <p><strong>Price:</strong> $100</p>
+    
+            <!-- Rating and Add to Cart Section -->
+            <div class="rating-and-cart">
+                <div class="rating">★★★★★</div>
+               <button class="addToCart" data-product="Vintage Saddle" data-price="100">
+                <i class="fas fa-shopping-cart cart-icon"></i>
+                <i class="fas fa-plus plus-icon"></i>
+            </button>
+            </div>
+    
+            <a href="https://jumia.com" target="_blank">Buy Now</a>
+        </div>
+        <div class="product" data-product="Product 1">
+            <img src="Christian Dior Vintage Saddle Blue Cloth Handbag.jpeg" alt="Vintage Saddle">
+            <h3>Vintage Saddle</h3>
+            <p>Christian Dior Vintage Saddle Blue Cloth Handbag.</p>
+            <p><strong>Price:</strong> $100</p>
+    
+            <!-- Rating and Add to Cart Section -->
+            <div class="rating-and-cart">
+                <div class="rating">★★★★★</div>
+               <button class="addToCart" data-product="Vintage Saddle" data-price="100">
+                <i class="fas fa-shopping-cart cart-icon"></i>
+                <i class="fas fa-plus plus-icon"></i>
+            </button>
+            </div>
+    
+            <a href="https://jumia.com" target="_blank">Buy Now</a>
+        </div>
+        <div class="product" data-product="Product 1">
+            <img src="Christian Dior Vintage Saddle Blue Cloth Handbag.jpeg" alt="Vintage Saddle">
+            <h3>Vintage Saddle</h3>
+            <p>Christian Dior Vintage Saddle Blue Cloth Handbag.</p>
+            <p><strong>Price:</strong> $100</p>
+    
+            <!-- Rating and Add to Cart Section -->
+            <div class="rating-and-cart">
+                <div class="rating">★★★★★</div>
+               <button class="addToCart" data-product="Vintage Saddle" data-price="100">
+                <i class="fas fa-shopping-cart cart-icon"></i>
+                <i class="fas fa-plus plus-icon"></i>
+            </button>
+            </div>
+    
+            <a href="https://jumia.com" target="_blank">Buy Now</a>
+        </div>
+        <div class="product" data-product="Product 1">
+            <img src="Christian Dior Vintage Saddle Blue Cloth Handbag.jpeg" alt="Vintage Saddle">
+            <h3>Vintage Saddle</h3>
+            <p>Christian Dior Vintage Saddle Blue Cloth Handbag.</p>
+            <p><strong>Price:</strong> $100</p>
+    
+            <!-- Rating and Add to Cart Section -->
+            <div class="rating-and-cart">
+                <div class="rating">★★★★★</div>
+               <button class="addToCart" data-product="Vintage Saddle" data-price="100">
+                <i class="fas fa-shopping-cart cart-icon"></i>
+                <i class="fas fa-plus plus-icon"></i>
+            </button>
+            </div>
+    
+            <a href="https://jumia.com" target="_blank">Buy Now</a>
+        </div>
+        <div class="product" data-product="Product 1">
+            <img src="Christian Dior Vintage Saddle Blue Cloth Handbag.jpeg" alt="Vintage Saddle">
+            <h3>Vintage Saddle</h3>
+            <p>Christian Dior Vintage Saddle Blue Cloth Handbag.</p>
+            <p><strong>Price:</strong> $100</p>
+    
+            <!-- Rating and Add to Cart Section -->
+            <div class="rating-and-cart">
+                <div class="rating">★★★★★</div>
+               <button class="addToCart" data-product="Vintage Saddle" data-price="100">
+                <i class="fas fa-shopping-cart cart-icon"></i>
+                <i class="fas fa-plus plus-icon"></i>
+            </button>
+            </div>
+    
+            <a href="https://jumia.com" target="_blank">Buy Now</a>
+        </div>
+        <div class="product" data-product="Product 1">
+            <img src="Christian Dior Vintage Saddle Blue Cloth Handbag.jpeg" alt="Vintage Saddle">
+            <h3>Vintage Saddle</h3>
+            <p>Christian Dior Vintage Saddle Blue Cloth Handbag.</p>
+            <p><strong>Price:</strong> $100</p>
+    
+            <!-- Rating and Add to Cart Section -->
+            <div class="rating-and-cart">
+                <div class="rating">★★★★★</div>
+               <button class="addToCart" data-product="Vintage Saddle" data-price="100">
+                <i class="fas fa-shopping-cart cart-icon"></i>
+                <i class="fas fa-plus plus-icon"></i>
+            </button>
+            </div>
+    
+            <a href="https://jumia.com" target="_blank">Buy Now</a>
+        </div>
+        <div class="product" data-product="Product 1">
+            <img src="Christian Dior Vintage Saddle Blue Cloth Handbag.jpeg" alt="Vintage Saddle">
+            <h3>Vintage Saddle</h3>
+            <p>Christian Dior Vintage Saddle Blue Cloth Handbag.</p>
+            <p><strong>Price:</strong> $100</p>
+    
+            <!-- Rating and Add to Cart Section -->
+            <div class="rating-and-cart">
+                <div class="rating">★★★★★</div>
+               <button class="addToCart" data-product="Vintage Saddle" data-price="100">
+                <i class="fas fa-shopping-cart cart-icon"></i>
+                <i class="fas fa-plus plus-icon"></i>
+            </button>
+            </div>
+    
+            <a href="https://jumia.com" target="_blank">Buy Now</a>
+        </div>
+        <div class="product" data-product="Product 1">
+            <img src="Christian Dior Vintage Saddle Blue Cloth Handbag.jpeg" alt="Vintage Saddle">
+            <h3>Vintage Saddle</h3>
+            <p>Christian Dior Vintage Saddle Blue Cloth Handbag.</p>
+            <p><strong>Price:</strong> $100</p>
+    
+            <!-- Rating and Add to Cart Section -->
+            <div class="rating-and-cart">
+                <div class="rating">★★★★★</div>
+               <button class="addToCart" data-product="Vintage Saddle" data-price="100">
+                <i class="fas fa-shopping-cart cart-icon"></i>
+                <i class="fas fa-plus plus-icon"></i>
+            </button>
+            </div>
+    
+            <a href="https://jumia.com" target="_blank">Buy Now</a>
+        </div>
+        <div class="product" data-product="Product 1">
+            <img src="Christian Dior Vintage Saddle Blue Cloth Handbag.jpeg" alt="Vintage Saddle">
+            <h3>Vintage Saddle</h3>
+            <p>Christian Dior Vintage Saddle Blue Cloth Handbag.</p>
+            <p><strong>Price:</strong> $100</p>
+    
+            <!-- Rating and Add to Cart Section -->
+            <div class="rating-and-cart">
+                <div class="rating">★★★★★</div>
+               <button class="addToCart" data-product="Vintage Saddle" data-price="100">
+                <i class="fas fa-shopping-cart cart-icon"></i>
+                <i class="fas fa-plus plus-icon"></i>
+            </button>
+            </div>
+    
+            <a href="https://jumia.com" target="_blank">Buy Now</a>
+        </div>
+    
+        <!-- Product 6 -->
+        <div class="product" data-product="Product 6">
+            <img src="Mini Saddle Bag With Strap Blue Dior Oblique Jacquard.jpeg" alt="Mini Saddle Bag">
+            <h3>Mini Saddle Bag</h3>
+            <p>Elegant blue saddle bag for stylish women.</p>
+            <p><strong>Price:</strong> $200</p>
+    
+            <!-- Rating and Add to Cart Section -->
+            <div class="rating-and-cart">
+                <div class="rating">★★★★☆</div>
+               <button class="addToCart" data-product="Vintage Saddle" data-price="100">
+                <i class="fas fa-shopping-cart cart-icon"></i>
+                <i class="fas fa-plus plus-icon"></i>
+            </button>
+            </div>
+    
+            <a href="https://jumia.com" target="_blank">Buy Now</a>
+        </div>
+    
+        <!-- Add more products if needed -->
+    </div>
+    
+
+
+                <!-- Add more products as needed -->
+            </div>
+            
+            <div class="category" data-category="watches">
+                <h3>Watches</h3>
+    <div class="product-container">
+        <!-- Product 1 -->
+        <div class="product" data-product="Product 1">
+            <img src="Christian Dior Vintage Saddle Blue Cloth Handbag.jpeg" alt="Vintage Saddle">
+            <h3>Vintage Saddle</h3>
+            <p>Christian Dior Vintage Saddle Blue Cloth Handbag.</p>
+            <p><strong>Price:</strong> $100</p>
+    
+            <!-- Rating and Add to Cart Section -->
+            <div class="rating-and-cart">
+                <div class="rating">★★★★★</div>
+               <button class="addToCart" data-product="Vintage Saddle" data-price="100">
+                <i class="fas fa-shopping-cart cart-icon"></i>
+                <i class="fas fa-plus plus-icon"></i>
+            </button>
+            </div>
+    
+            <a href="https://jumia.com" target="_blank">Buy Now</a>
+        </div>
+    
+        <!-- Product 2 -->
+        <div class="product" data-product="Product 2">
+            <img src="Franco Shops - Louis Vuittons  - 14853.jpeg" alt="Luxury Handbag">
+            <h3>Luxury Handbag</h3>
+            <p>Exclusive leather handbag for a modern look.</p>
+            <p><strong>Price:</strong> $150</p>
+    
+            <!-- Rating and Add to Cart Section -->
+            <div class="rating-and-cart">
+                <div class="rating">★★★★☆</div>
+               <button class="addToCart" data-product="Vintage Saddle" data-price="100">
+                <i class="fas fa-shopping-cart cart-icon"></i>
+                <i class="fas fa-plus plus-icon"></i>
+            </button>
+            </div>
+    
+            <a href="https://jumia.com" target="_blank">Buy Now</a>
+        </div>
+    
+        <!-- Product 3 -->
+        <div class="product" data-product="Product 3">
+            <img src="Mini Saddle Bag With Strap Blue Dior Oblique Jacquard.jpeg" alt="Designer Handbag">
+            <h3>Mini Saddle Bag</h3>
+            <p>Elegant blue saddle bag for stylish women.</p>
+            <p><strong>Price:</strong> $200</p>
+    
+            <!-- Rating and Add to Cart Section -->
+            <div class="rating-and-cart">
+                <div class="rating">★★★★☆</div>
+               <button class="addToCart" data-product="Vintage Saddle" data-price="100">
+                <i class="fas fa-shopping-cart cart-icon"></i>
+                <i class="fas fa-plus plus-icon"></i>
+            </button>
+            </div>
+    
+            <a href="https://jumia.com" target="_blank">Buy Now</a>
+        </div>
+    
+        <!-- Product 4 -->
+        <div class="product" data-product="Product 4">
+            <img src="Saddle Bag With Strap Black Grained Leather.jpeg" alt="Elegant Black Handbag">
+            <h3>Elegant Black Handbag</h3>
+            <p>Classic black handbag with a stylish design.</p>
+            <p><strong>Price:</strong> $220</p>
+    
+            <!-- Rating and Add to Cart Section -->
+            <div class="rating-and-cart">
+                <div class="rating">★★★★☆</div>
+               <button class="addToCart" data-product="Vintage Saddle" data-price="100">
+                <i class="fas fa-shopping-cart cart-icon"></i>
+                <i class="fas fa-plus plus-icon"></i>
+            </button>
+            </div>
+    
+            <a href="https://jumia.com" target="_blank">Buy Now</a>
+        </div>
+    
+        <!-- Product 5 -->
+        <div class="product" data-product="Product 5">
+            <img src="Sekonda Charlotte Ladies Classic Watch (40477) - Round _ Alloy Bracelet _ Pink Dial _ Classic Col___.jpeg" alt="Classic Watch">
+            <h3>Classic Watch</h3>
+            <p>Sekonda Charlotte Ladies Classic Watch with pink dial.</p>
+            <p><strong>Price:</strong> $85</p>
+    
+            <!-- Rating and Add to Cart Section -->
+            <div class="rating-and-cart">
+                <div class="rating">★★★★☆</div>
+               <button class="addToCart" data-product="Vintage Saddle" data-price="100">
+                <i class="fas fa-shopping-cart cart-icon"></i>
+                <i class="fas fa-plus plus-icon"></i>
+            </button>
+            </div>
+    
+            <a href="https://jumia.com" target="_blank">Buy Now</a>
+        </div>
+    
+        <!-- Product 6 -->
+        <div class="product" data-product="Product 6">
+            <img src="Mini Saddle Bag With Strap Blue Dior Oblique Jacquard.jpeg" alt="Mini Saddle Bag">
+            <h3>Mini Saddle Bag</h3>
+            <p>Elegant blue saddle bag for stylish women.</p>
+            <p><strong>Price:</strong> $200</p>
+    
+            <!-- Rating and Add to Cart Section -->
+            <div class="rating-and-cart">
+                <div class="rating">★★★★☆</div>
+               <button class="addToCart" data-product="Vintage Saddle" data-price="100">
+                <i class="fas fa-shopping-cart cart-icon"></i>
+                <i class="fas fa-plus plus-icon"></i>
+            </button>
+            </div>
+    
+            <a href="https://jumia.com" target="_blank">Buy Now</a>
+        </div>
+    
+        <!-- Add more products if needed -->
+    </div>
+    
+
+
+                <!-- Add more products as needed -->
+            </div>
+
+            <div class="category" data-category="men's shirts">
+                <h3>men's shirts</h3>
+    <div class="product-container">
+        <!-- Product 1 -->
+        <div class="product" data-product="Product 1">
+            <img src="Christian Dior Vintage Saddle Blue Cloth Handbag.jpeg" alt="Vintage Saddle">
+            <h3>Vintage Saddle</h3>
+            <p>Christian Dior Vintage Saddle Blue Cloth Handbag.</p>
+            <p><strong>Price:</strong> $100</p>
+    
+            <!-- Rating and Add to Cart Section -->
+            <div class="rating-and-cart">
+                <div class="rating">★★★★★</div>
+               <button class="addToCart" data-product="Vintage Saddle" data-price="100">
+                <i class="fas fa-shopping-cart cart-icon"></i>
+                <i class="fas fa-plus plus-icon"></i>
+            </button>
+            </div>
+    
+            <a href="https://jumia.com" target="_blank">Buy Now</a>
+        </div>
+    
+        <!-- Product 2 -->
+        <div class="product" data-product="Product 2">
+            <img src="Franco Shops - Louis Vuittons  - 14853.jpeg" alt="Luxury Handbag">
+            <h3>Luxury Handbag</h3>
+            <p>Exclusive leather handbag for a modern look.</p>
+            <p><strong>Price:</strong> $150</p>
+    
+            <!-- Rating and Add to Cart Section -->
+            <div class="rating-and-cart">
+                <div class="rating">★★★★☆</div>
+               <button class="addToCart" data-product="Vintage Saddle" data-price="100">
+                <i class="fas fa-shopping-cart cart-icon"></i>
+                <i class="fas fa-plus plus-icon"></i>
+            </button>
+            </div>
+    
+            <a href="https://jumia.com" target="_blank">Buy Now</a>
+        </div>
+        <div class="product" data-product="Product 1">
+            <img src="Christian Dior Vintage Saddle Blue Cloth Handbag.jpeg" alt="Vintage Saddle">
+            <h3>Vintage Saddle</h3>
+            <p>Christian Dior Vintage Saddle Blue Cloth Handbag.</p>
+            <p><strong>Price:</strong> $100</p>
+    
+            <!-- Rating and Add to Cart Section -->
+            <div class="rating-and-cart">
+                <div class="rating">★★★★★</div>
+               <button class="addToCart" data-product="Vintage Saddle" data-price="100">
+                <i class="fas fa-shopping-cart cart-icon"></i>
+                <i class="fas fa-plus plus-icon"></i>
+            </button>
+            </div>
+    
+            <a href="https://jumia.com" target="_blank">Buy Now</a>
+        </div>
+        <div class="product" data-product="Product 1">
+            <img src="Christian Dior Vintage Saddle Blue Cloth Handbag.jpeg" alt="Vintage Saddle">
+            <h3>Vintage Saddle</h3>
+            <p>Christian Dior Vintage Saddle Blue Cloth Handbag.</p>
+            <p><strong>Price:</strong> $100</p>
+    
+            <!-- Rating and Add to Cart Section -->
+            <div class="rating-and-cart">
+                <div class="rating">★★★★★</div>
+               <button class="addToCart" data-product="Vintage Saddle" data-price="100">
+                <i class="fas fa-shopping-cart cart-icon"></i>
+                <i class="fas fa-plus plus-icon"></i>
+            </button>
+            </div>
+    
+            <a href="https://jumia.com" target="_blank">Buy Now</a>
+        </div>
+    
+        <!-- Product 3 -->
+        <div class="product" data-product="Product 3">
+            <img src="Mini Saddle Bag With Strap Blue Dior Oblique Jacquard.jpeg" alt="Designer Handbag">
+            <h3>Mini Saddle Bag</h3>
+            <p>Elegant blue saddle bag for stylish women.</p>
+            <p><strong>Price:</strong> $200</p>
+    
+            <!-- Rating and Add to Cart Section -->
+            <div class="rating-and-cart">
+                <div class="rating">★★★★☆</div>
+               <button class="addToCart" data-product="Vintage Saddle" data-price="100">
+                <i class="fas fa-shopping-cart cart-icon"></i>
+                <i class="fas fa-plus plus-icon"></i>
+            </button>
+            </div>
+    
+            <a href="https://jumia.com" target="_blank">Buy Now</a>
+        </div>
+        <div class="product" data-product="Product 1">
+            <img src="Christian Dior Vintage Saddle Blue Cloth Handbag.jpeg" alt="Vintage Saddle">
+            <h3>Vintage Saddle</h3>
+            <p>Christian Dior Vintage Saddle Blue Cloth Handbag.</p>
+            <p><strong>Price:</strong> $100</p>
+    
+            <!-- Rating and Add to Cart Section -->
+            <div class="rating-and-cart">
+                <div class="rating">★★★★★</div>
+               <button class="addToCart" data-product="Vintage Saddle" data-price="100">
+                <i class="fas fa-shopping-cart cart-icon"></i>
+                <i class="fas fa-plus plus-icon"></i>
+            </button>
+            </div>
+    
+            <a href="https://jumia.com" target="_blank">Buy Now</a>
+        </div>
+    
+        <!-- Product 4 -->
+        <div class="product" data-product="Product 4">
+            <img src="Saddle Bag With Strap Black Grained Leather.jpeg" alt="Elegant Black Handbag">
+            <h3>Elegant Black Handbag</h3>
+            <p>Classic black handbag with a stylish design.</p>
+            <p><strong>Price:</strong> $220</p>
+    
+            <!-- Rating and Add to Cart Section -->
+            <div class="rating-and-cart">
+                <div class="rating">★★★★☆</div>
+               <button class="addToCart" data-product="Vintage Saddle" data-price="100">
+                <i class="fas fa-shopping-cart cart-icon"></i>
+                <i class="fas fa-plus plus-icon"></i>
+            </button>
+            </div>
+    
+            <a href="https://jumia.com" target="_blank">Buy Now</a>
+        </div>
+        <div class="product" data-product="Product 1">
+            <img src="Christian Dior Vintage Saddle Blue Cloth Handbag.jpeg" alt="Vintage Saddle">
+            <h3>Vintage Saddle</h3>
+            <p>Christian Dior Vintage Saddle Blue Cloth Handbag.</p>
+            <p><strong>Price:</strong> $100</p>
+    
+            <!-- Rating and Add to Cart Section -->
+            <div class="rating-and-cart">
+                <div class="rating">★★★★★</div>
+               <button class="addToCart" data-product="Vintage Saddle" data-price="100">
+                <i class="fas fa-shopping-cart cart-icon"></i>
+                <i class="fas fa-plus plus-icon"></i>
+            </button>
+            </div>
+    
+            <a href="https://jumia.com" target="_blank">Buy Now</a>
+        </div>
+    
+        <!-- Product 5 -->
+        <div class="product" data-product="Product 5">
+            <img src="Sekonda Charlotte Ladies Classic Watch (40477) - Round _ Alloy Bracelet _ Pink Dial _ Classic Col___.jpeg" alt="Classic Watch">
+            <h3>Classic Watch</h3>
+            <p>Sekonda Charlotte Ladies Classic Watch with pink dial.</p>
+            <p><strong>Price:</strong> $85</p>
+    
+            <!-- Rating and Add to Cart Section -->
+            <div class="rating-and-cart">
+                <div class="rating">★★★★☆</div>
+               <button class="addToCart" data-product="Vintage Saddle" data-price="100">
+                <i class="fas fa-shopping-cart cart-icon"></i>
+                <i class="fas fa-plus plus-icon"></i>
+            </button>
+            </div>
+    
+            <a href="https://jumia.com" target="_blank">Buy Now</a>
+        </div>
+        <div class="product" data-product="Product 1">
+            <img src="Christian Dior Vintage Saddle Blue Cloth Handbag.jpeg" alt="Vintage Saddle">
+            <h3>Vintage Saddle</h3>
+            <p>Christian Dior Vintage Saddle Blue Cloth Handbag.</p>
+            <p><strong>Price:</strong> $100</p>
+    
+            <!-- Rating and Add to Cart Section -->
+            <div class="rating-and-cart">
+                <div class="rating">★★★★★</div>
+               <button class="addToCart" data-product="Vintage Saddle" data-price="100">
+                <i class="fas fa-shopping-cart cart-icon"></i>
+                <i class="fas fa-plus plus-icon"></i>
+            </button>
+            </div>
+    
+            <a href="https://jumia.com" target="_blank">Buy Now</a>
+        </div>
+        <div class="product" data-product="Product 1">
+            <img src="Christian Dior Vintage Saddle Blue Cloth Handbag.jpeg" alt="Vintage Saddle">
+            <h3>Vintage Saddle</h3>
+            <p>Christian Dior Vintage Saddle Blue Cloth Handbag.</p>
+            <p><strong>Price:</strong> $100</p>
+    
+            <!-- Rating and Add to Cart Section -->
+            <div class="rating-and-cart">
+                <div class="rating">★★★★★</div>
+               <button class="addToCart" data-product="Vintage Saddle" data-price="100">
+                <i class="fas fa-shopping-cart cart-icon"></i>
+                <i class="fas fa-plus plus-icon"></i>
+            </button>
+            </div>
+    
+            <a href="https://jumia.com" target="_blank">Buy Now</a>
+        </div>
+        <div class="product" data-product="Product 1">
+            <img src="Christian Dior Vintage Saddle Blue Cloth Handbag.jpeg" alt="Vintage Saddle">
+            <h3>Vintage Saddle</h3>
+            <p>Christian Dior Vintage Saddle Blue Cloth Handbag.</p>
+            <p><strong>Price:</strong> $100</p>
+    
+            <!-- Rating and Add to Cart Section -->
+            <div class="rating-and-cart">
+                <div class="rating">★★★★★</div>
+               <button class="addToCart" data-product="Vintage Saddle" data-price="100">
+                <i class="fas fa-shopping-cart cart-icon"></i>
+                <i class="fas fa-plus plus-icon"></i>
+            </button>
+            </div>
+    
+            <a href="https://jumia.com" target="_blank">Buy Now</a>
+        </div>
+        <div class="product" data-product="Product 1">
+            <img src="Christian Dior Vintage Saddle Blue Cloth Handbag.jpeg" alt="Vintage Saddle">
+            <h3>Vintage Saddle</h3>
+            <p>Christian Dior Vintage Saddle Blue Cloth Handbag.</p>
+            <p><strong>Price:</strong> $100</p>
+    
+            <!-- Rating and Add to Cart Section -->
+            <div class="rating-and-cart">
+                <div class="rating">★★★★★</div>
+               <button class="addToCart" data-product="Vintage Saddle" data-price="100">
+                <i class="fas fa-shopping-cart cart-icon"></i>
+                <i class="fas fa-plus plus-icon"></i>
+            </button>
+            </div>
+    
+            <a href="https://jumia.com" target="_blank">Buy Now</a>
+        </div>
+        <div class="product" data-product="Product 1">
+            <img src="Christian Dior Vintage Saddle Blue Cloth Handbag.jpeg" alt="Vintage Saddle">
+            <h3>Vintage Saddle</h3>
+            <p>Christian Dior Vintage Saddle Blue Cloth Handbag.</p>
+            <p><strong>Price:</strong> $100</p>
+    
+            <!-- Rating and Add to Cart Section -->
+            <div class="rating-and-cart">
+                <div class="rating">★★★★★</div>
+               <button class="addToCart" data-product="Vintage Saddle" data-price="100">
+                <i class="fas fa-shopping-cart cart-icon"></i>
+                <i class="fas fa-plus plus-icon"></i>
+            </button>
+            </div>
+    
+            <a href="https://jumia.com" target="_blank">Buy Now</a>
+        </div>
+        <div class="product" data-product="Product 1">
+            <img src="Christian Dior Vintage Saddle Blue Cloth Handbag.jpeg" alt="Vintage Saddle">
+            <h3>Vintage Saddle</h3>
+            <p>Christian Dior Vintage Saddle Blue Cloth Handbag.</p>
+            <p><strong>Price:</strong> $100</p>
+    
+            <!-- Rating and Add to Cart Section -->
+            <div class="rating-and-cart">
+                <div class="rating">★★★★★</div>
+               <button class="addToCart" data-product="Vintage Saddle" data-price="100">
+                <i class="fas fa-shopping-cart cart-icon"></i>
+                <i class="fas fa-plus plus-icon"></i>
+            </button>
+            </div>
+    
+            <a href="https://jumia.com" target="_blank">Buy Now</a>
+        </div>
+        <div class="product" data-product="Product 1">
+            <img src="Christian Dior Vintage Saddle Blue Cloth Handbag.jpeg" alt="Vintage Saddle">
+            <h3>Vintage Saddle</h3>
+            <p>Christian Dior Vintage Saddle Blue Cloth Handbag.</p>
+            <p><strong>Price:</strong> $100</p>
+    
+            <!-- Rating and Add to Cart Section -->
+            <div class="rating-and-cart">
+                <div class="rating">★★★★★</div>
+               <button class="addToCart" data-product="Vintage Saddle" data-price="100">
+                <i class="fas fa-shopping-cart cart-icon"></i>
+                <i class="fas fa-plus plus-icon"></i>
+            </button>
+            </div>
+    
+            <a href="https://jumia.com" target="_blank">Buy Now</a>
+        </div>
+        <div class="product" data-product="Product 1">
+            <img src="Christian Dior Vintage Saddle Blue Cloth Handbag.jpeg" alt="Vintage Saddle">
+            <h3>Vintage Saddle</h3>
+            <p>Christian Dior Vintage Saddle Blue Cloth Handbag.</p>
+            <p><strong>Price:</strong> $100</p>
+    
+            <!-- Rating and Add to Cart Section -->
+            <div class="rating-and-cart">
+                <div class="rating">★★★★★</div>
+               <button class="addToCart" data-product="Vintage Saddle" data-price="100">
+                <i class="fas fa-shopping-cart cart-icon"></i>
+                <i class="fas fa-plus plus-icon"></i>
+            </button>
+            </div>
+    
+            <a href="https://jumia.com" target="_blank">Buy Now</a>
+        </div>
+        <div class="product" data-product="Product 1">
+            <img src="Christian Dior Vintage Saddle Blue Cloth Handbag.jpeg" alt="Vintage Saddle">
+            <h3>Vintage Saddle</h3>
+            <p>Christian Dior Vintage Saddle Blue Cloth Handbag.</p>
+            <p><strong>Price:</strong> $100</p>
+    
+            <!-- Rating and Add to Cart Section -->
+            <div class="rating-and-cart">
+                <div class="rating">★★★★★</div>
+               <button class="addToCart" data-product="Vintage Saddle" data-price="100">
+                <i class="fas fa-shopping-cart cart-icon"></i>
+                <i class="fas fa-plus plus-icon"></i>
+            </button>
+            </div>
+    
+            <a href="https://jumia.com" target="_blank">Buy Now</a>
+        </div>
+        <div class="product" data-product="Product 1">
+            <img src="Christian Dior Vintage Saddle Blue Cloth Handbag.jpeg" alt="Vintage Saddle">
+            <h3>Vintage Saddle</h3>
+            <p>Christian Dior Vintage Saddle Blue Cloth Handbag.</p>
+            <p><strong>Price:</strong> $100</p>
+    
+            <!-- Rating and Add to Cart Section -->
+            <div class="rating-and-cart">
+                <div class="rating">★★★★★</div>
+               <button class="addToCart" data-product="Vintage Saddle" data-price="100">
+                <i class="fas fa-shopping-cart cart-icon"></i>
+                <i class="fas fa-plus plus-icon"></i>
+            </button>
+            </div>
+    
+            <a href="https://jumia.com" target="_blank">Buy Now</a>
+        </div>
+    
+        <!-- Product 6 -->
+        <div class="product" data-product="Product 6">
+            <img src="Mini Saddle Bag With Strap Blue Dior Oblique Jacquard.jpeg" alt="Mini Saddle Bag">
+            <h3>Mini Saddle Bag</h3>
+            <p>Elegant blue saddle bag for stylish women.</p>
+            <p><strong>Price:</strong> $200</p>
+    
+            <!-- Rating and Add to Cart Section -->
+            <div class="rating-and-cart">
+                <div class="rating">★★★★☆</div>
+               <button class="addToCart" data-product="Vintage Saddle" data-price="100">
+                <i class="fas fa-shopping-cart cart-icon"></i>
+                <i class="fas fa-plus plus-icon"></i>
+            </button>
+            </div>
+    
+            <a href="https://jumia.com" target="_blank">Buy Now</a>
+        </div>
+    
+        <!-- Add more products if needed -->
+    </div>
+    
+
+
+                <!-- Add more products as needed -->
+            </div>
+            
+        </section>
+        
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form id="contactForm">
+                <label for="name"></label>
+                <input type="text" id="name" placeholder="name" name="name" required>
+                
+                <label for="email"></label>
+                <input type="email" id="email" placeholder="email" name="email" required>
+                
+                <label for="message"></label>
+                <textarea id="message" placeholder="message us" name="message" required></textarea>
+                
+                <button id="submit" type="submit">Send</button>
+            </form>
+
+            
+            
+            <div class="socials">
+                <div class="sign-up">
+                    <a href="/signup" aria-label="Create an account">Create an account</a>
+                </div>
+                <div class="mediaers">
+                    <p>Follow us on:</p>
+                    <ul>
+                        <li>
+                            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)">
+                                <i class="fab fa-x-twitter"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+        </section>
+    </main>
+    
+    <div id="cartModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Shopping Cart</h2>
+            <div id="cartItems"></div>
+            <div class="cart-total">
+                <h3>Total: $<span id="cartTotal">0</span></h3>
+            </div>
+            <button id="buyNowButton">Buy Now</button>
+        </div>
+    </div>
+
+    <div id="helpModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Help</h2>
+            <section id="illustrations">
+                <h3>How to Navigate Our Website</h3>
+                <div class="illustration">
+                    <img src="Cute Small PVC Shoulder Crossbody Bags for Women 2023 Hit Luxury Party Evening Handbags and Purses.jpeg" alt="Illustration 1">
+                    <p>Step 1: Explore our products by navigating to the "Products" section.</p>
+                </div>
+                <div class="illustration">
+                    <img src="illustration2.jpg" alt="Illustration 2">
+                    <p>Step 2: Add products to your cart by clicking the "Add to Cart" button.</p>
+                </div>
+                <div class="illustration">
+                    <img src="illustration3.jpg" alt="Illustration 3">
+                    <p>Step 3: View your cart by clicking the "Cart" button at the top right corner.</p>
+                </div>
+                <div class="illustration">
+                    <img src="illustration4.jpg" alt="Illustration 4">
+                    <p>Step 4: Proceed to purchase by clicking the "Buy Now" button in your cart.</p>
+                </div>
+            </section>
+            
+            <section id="faq">
+                <h3>Frequently Asked Questions</h3>
+                <div class="faq-item">
+                    <h4>How do I create an account?</h4>
+                    <p>To create an account, click on the "Sign Up" button at the top right corner and fill in your details.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>How do I reset my password?</h4>
+                    <p>To reset your password, click on the "Forgot Password" link on the login page and follow the instructions.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>How do I track my order?</h4>
+                    <p>You can track your order by logging into your account and navigating to the "Order History" section.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>How do I contact customer support?</h4>
+                    <p>You can contact customer support by filling out the form on the "Contact Us" page or by emailing support@example.com.</p>
+                </div>
+            </section>
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; 2025 Affiliate Marketing. All rights reserved.</p>
+    </footer>
+    
+    <script src="affiliate.js"></script>
+</body>
+</html>
